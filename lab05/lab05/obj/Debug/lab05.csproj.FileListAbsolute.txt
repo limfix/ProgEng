@@ -1,0 +1,11 @@
+C:\Users\Admin\Desktop\ProgEng\lab05\lab05\obj\Debug\lab05.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\ProgEng\lab05\lab05\obj\Debug\lab05.MainWindow.resources
+C:\Users\Admin\Desktop\ProgEng\lab05\lab05\obj\Debug\lab05.Properties.Resources.resources
+C:\Users\Admin\Desktop\ProgEng\lab05\lab05\obj\Debug\lab05.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\ProgEng\lab05\lab05\obj\Debug\lab05.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\ProgEng\lab05\lab05\bin\Debug\lab05.exe.config
+C:\Users\Admin\Desktop\ProgEng\lab05\lab05\bin\Debug\lab05.exe
+C:\Users\Admin\Desktop\ProgEng\lab05\lab05\bin\Debug\lab05.pdb
+C:\Users\Admin\Desktop\ProgEng\lab05\lab05\obj\Debug\lab05.exe
+C:\Users\Admin\Desktop\ProgEng\lab05\lab05\obj\Debug\lab05.pdb
+C:\Users\Admin\Desktop\ProgEng\lab05\lab05\obj\Debug\lab05.DrawWindow.resources
