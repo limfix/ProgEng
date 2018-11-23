@@ -32,6 +32,7 @@
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editorFormToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openPictureToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,7 +49,8 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newToolStripMenuItem});
+            this.newToolStripMenuItem,
+            this.openPictureToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
@@ -64,9 +66,16 @@
             // editorFormToolStripMenuItem
             // 
             this.editorFormToolStripMenuItem.Name = "editorFormToolStripMenuItem";
-            this.editorFormToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editorFormToolStripMenuItem.Size = new System.Drawing.Size(133, 22);
             this.editorFormToolStripMenuItem.Text = "EditorForm";
             this.editorFormToolStripMenuItem.Click += new System.EventHandler(this.editorFormToolStripMenuItem_Click);
+            // 
+            // openPictureToolStripMenuItem
+            // 
+            this.openPictureToolStripMenuItem.Name = "openPictureToolStripMenuItem";
+            this.openPictureToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.openPictureToolStripMenuItem.Text = "Open Picture";
+            this.openPictureToolStripMenuItem.Click += new System.EventHandler(this.openPictureToolStripMenuItem_Click);
             // 
             // ParentForm
             // 
@@ -91,5 +100,6 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editorFormToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem openPictureToolStripMenuItem;
     }
 }

@@ -11,3 +11,17 @@ C:\Users\Admin\Desktop\ProgEng\lab02\obj\x86\Debug\WindowsApplication.exe
 C:\Users\Admin\Desktop\ProgEng\lab02\obj\x86\Debug\WindowsApplication.pdb
 C:\Users\Admin\Desktop\ProgEng\lab02\obj\x86\Debug\lab06.Properties.Resources.resources
 C:\Users\Admin\Desktop\ProgEng\lab02\obj\x86\Debug\lab06.ParentForm.resources
+C:\Users\Lex\Documents\GitHub\ProgEng\lab02\bin\Debug\WindowsApplication.exe.config
+C:\Users\Lex\Documents\GitHub\ProgEng\lab02\bin\Debug\WindowsApplication.exe
+C:\Users\Lex\Documents\GitHub\ProgEng\lab02\bin\Debug\WindowsApplication.pdb
+C:\Users\Lex\Documents\GitHub\ProgEng\lab02\obj\x86\Debug\lab02.FindMenu.resources
+C:\Users\Lex\Documents\GitHub\ProgEng\lab02\obj\x86\Debug\lab02.MainForm.resources
+C:\Users\Lex\Documents\GitHub\ProgEng\lab02\obj\x86\Debug\lab06.ParentForm.resources
+C:\Users\Lex\Documents\GitHub\ProgEng\lab02\obj\x86\Debug\lab06.Properties.Resources.resources
+C:\Users\Lex\Documents\GitHub\ProgEng\lab02\obj\x86\Debug\lab02.Statistics.resources
+C:\Users\Lex\Documents\GitHub\ProgEng\lab02\obj\x86\Debug\lab06.csproj.GenerateResource.cache
+C:\Users\Lex\Documents\GitHub\ProgEng\lab02\obj\x86\Debug\lab06.csproj.CoreCompileInputs.cache
+C:\Users\Lex\Documents\GitHub\ProgEng\lab02\obj\x86\Debug\WindowsApplication.exe
+C:\Users\Lex\Documents\GitHub\ProgEng\lab02\obj\x86\Debug\WindowsApplication.pdb
+C:\Users\Lex\Documents\GitHub\ProgEng\lab02\obj\x86\Debug\lab06.csprojAssemblyReference.cache
+C:\Users\Lex\Documents\GitHub\ProgEng\lab02\obj\x86\Debug\lab06.PictureForm.resources

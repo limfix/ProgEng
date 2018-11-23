@@ -8,3 +8,13 @@ C:\Users\Admin\Desktop\ProgEng\lab04\lab04\obj\Debug\lab04.csproj.GenerateResour
 C:\Users\Admin\Desktop\ProgEng\lab04\lab04\obj\Debug\lab04.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Desktop\ProgEng\lab04\lab04\obj\Debug\lab04.exe
 C:\Users\Admin\Desktop\ProgEng\lab04\lab04\obj\Debug\lab04.pdb
+C:\Users\Lex\Documents\GitHub\ProgEng\lab04\lab04\bin\Debug\lab04.exe.config
+C:\Users\Lex\Documents\GitHub\ProgEng\lab04\lab04\bin\Debug\lab04.exe
+C:\Users\Lex\Documents\GitHub\ProgEng\lab04\lab04\bin\Debug\lab04.pdb
+C:\Users\Lex\Documents\GitHub\ProgEng\lab04\lab04\obj\Debug\lab04.csprojAssemblyReference.cache
+C:\Users\Lex\Documents\GitHub\ProgEng\lab04\lab04\obj\Debug\lab04.Form1.resources
+C:\Users\Lex\Documents\GitHub\ProgEng\lab04\lab04\obj\Debug\lab04.Properties.Resources.resources
+C:\Users\Lex\Documents\GitHub\ProgEng\lab04\lab04\obj\Debug\lab04.csproj.GenerateResource.cache
+C:\Users\Lex\Documents\GitHub\ProgEng\lab04\lab04\obj\Debug\lab04.csproj.CoreCompileInputs.cache
+C:\Users\Lex\Documents\GitHub\ProgEng\lab04\lab04\obj\Debug\lab04.exe
+C:\Users\Lex\Documents\GitHub\ProgEng\lab04\lab04\obj\Debug\lab04.pdb

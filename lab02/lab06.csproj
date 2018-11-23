@@ -80,6 +80,16 @@
     <Compile Include="FindMenu.Designer.cs">
       <DependentUpon>FindMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="ImgFabrical\BmpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImgFabrical\BmpFormDeveloper.cs" />
+    <Compile Include="ImgFabrical\FormDeveloper.cs" />
+    <Compile Include="ImgFabrical\ImgForm.cs" />
+    <Compile Include="ImgFabrical\JpegForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImgFabrical\JpegFormDeveloper.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +101,12 @@
     </Compile>
     <Compile Include="ParentForm.Designer.cs">
       <DependentUpon>ParentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImgFabrical\PictureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImgFabrical\PictureForm.Designer.cs">
+      <DependentUpon>PictureForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ProductText\Product.cs" />
     <Compile Include="Program.cs" />
@@ -121,6 +137,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ParentForm.resx">
       <DependentUpon>ParentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImgFabrical\PictureForm.resx">
+      <DependentUpon>PictureForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
