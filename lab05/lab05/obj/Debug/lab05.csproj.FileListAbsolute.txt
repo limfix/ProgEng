@@ -9,3 +9,14 @@ C:\Users\Admin\Desktop\ProgEng\lab05\lab05\bin\Debug\lab05.pdb
 C:\Users\Admin\Desktop\ProgEng\lab05\lab05\obj\Debug\lab05.exe
 C:\Users\Admin\Desktop\ProgEng\lab05\lab05\obj\Debug\lab05.pdb
 C:\Users\Admin\Desktop\ProgEng\lab05\lab05\obj\Debug\lab05.DrawWindow.resources
+C:\Users\Lex\Documents\GitHub\ProgEng\lab05\lab05\bin\Debug\lab05.exe.config
+C:\Users\Lex\Documents\GitHub\ProgEng\lab05\lab05\bin\Debug\lab05.exe
+C:\Users\Lex\Documents\GitHub\ProgEng\lab05\lab05\bin\Debug\lab05.pdb
+C:\Users\Lex\Documents\GitHub\ProgEng\lab05\lab05\obj\Debug\lab05.csprojAssemblyReference.cache
+C:\Users\Lex\Documents\GitHub\ProgEng\lab05\lab05\obj\Debug\lab05.MainWindow.resources
+C:\Users\Lex\Documents\GitHub\ProgEng\lab05\lab05\obj\Debug\lab05.Properties.Resources.resources
+C:\Users\Lex\Documents\GitHub\ProgEng\lab05\lab05\obj\Debug\lab05.DrawWindow.resources
+C:\Users\Lex\Documents\GitHub\ProgEng\lab05\lab05\obj\Debug\lab05.csproj.GenerateResource.cache
+C:\Users\Lex\Documents\GitHub\ProgEng\lab05\lab05\obj\Debug\lab05.csproj.CoreCompileInputs.cache
+C:\Users\Lex\Documents\GitHub\ProgEng\lab05\lab05\obj\Debug\lab05.exe
+C:\Users\Lex\Documents\GitHub\ProgEng\lab05\lab05\obj\Debug\lab05.pdb

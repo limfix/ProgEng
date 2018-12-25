@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Drawing;
-using System.Drawing.Drawing2D;
+using lab05.FigureProt;
 
 namespace lab05
 {
@@ -13,14 +13,18 @@ namespace lab05
         private Color currentColor = Color.Black;
         private int size = 5;
         public string drawType;
+        public DrawWindow currentDw;
         Graphics g;
         Point prevPoint;
         Point currentPoint;
+
+        IFigure clone = new CopyFigure();
 
         public DrawWindow()
         {
             InitializeComponent();
             g = DrawBox.CreateGraphics();
+            clone.pBox = DrawBox;
         }
 
         private void DrawWindow_Load(object sender, EventArgs e)
@@ -51,23 +55,42 @@ namespace lab05
         {
             if (ispressed)
             {
+                if (DrawBox.Image == null)
+                {
+                    Bitmap bmp = new Bitmap(DrawBox.Width, DrawBox.Height);
+                    DrawBox.Image = bmp;
+                }
+                using (g = Graphics.FromImage(DrawBox.Image))
+                {
+                    switch (drawType)
+                    {
+                        case "Circle":
+                            DrawLine(factoryCircle);
+                            break;
+                        case "Rectangle":
+                            DrawLine(factoryRectangle);
+                            break;
+                    }
+                }
                 prevPoint = currentPoint;
                 currentPoint = e.Location;
-                switch (drawType)
-                {
-                    case "Circle":
-                        DrawLine(factoryCircle);
-                        break;
-                    case "Rectangle":
-                        DrawLine(factoryRectangle);
-                        break;
-                }
+                DrawBox.Invalidate();
             }
         }
 
         private void DrawBox_MouseUp(object sender, MouseEventArgs e)
         {
             ispressed = false;
+        }
+
+        private void copyButton_Click_1(object sender, EventArgs e)
+        {
+            clone.Clone(clone);
+        }
+
+        private void pasteButton_Click(object sender, EventArgs e)
+        {
+            clone.Paste(clone);
         }
     }
 }

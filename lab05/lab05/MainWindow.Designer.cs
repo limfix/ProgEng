@@ -34,10 +34,14 @@
             this.CanvasMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.RectangleMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CircleMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.LanguageMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.RussianMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.EnglishMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.SizeBar = new System.Windows.Forms.TrackBar();
             this.ButtonColor = new System.Windows.Forms.Button();
             this.ColorPickerDialog = new System.Windows.Forms.ColorDialog();
+            this.addTextButton = new System.Windows.Forms.Button();
             this.MainMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SizeBar)).BeginInit();
@@ -46,10 +50,11 @@
             // MainMenu
             // 
             this.MainMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.FileMenuItem});
+            this.FileMenuItem,
+            this.LanguageMenuItem});
             this.MainMenu.Location = new System.Drawing.Point(0, 0);
             this.MainMenu.Name = "MainMenu";
-            this.MainMenu.Size = new System.Drawing.Size(483, 24);
+            this.MainMenu.Size = new System.Drawing.Size(673, 24);
             this.MainMenu.TabIndex = 0;
             this.MainMenu.Text = "menuStrip1";
             // 
@@ -66,7 +71,7 @@
             this.CreateMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.CanvasMenuItem});
             this.CreateMenuItem.Name = "CreateMenuItem";
-            this.CreateMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.CreateMenuItem.Size = new System.Drawing.Size(117, 22);
             this.CreateMenuItem.Text = "Создать";
             // 
             // CanvasMenuItem
@@ -75,25 +80,49 @@
             this.RectangleMenuItem,
             this.CircleMenuItem});
             this.CanvasMenuItem.Name = "CanvasMenuItem";
-            this.CanvasMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.CanvasMenuItem.Size = new System.Drawing.Size(106, 22);
             this.CanvasMenuItem.Text = "Холст";
             // 
             // RectangleMenuItem
             // 
             this.RectangleMenuItem.Name = "RectangleMenuItem";
-            this.RectangleMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.RectangleMenuItem.Size = new System.Drawing.Size(166, 22);
             this.RectangleMenuItem.Text = "Прямоугольный";
             this.RectangleMenuItem.Click += new System.EventHandler(this.RectangleMenuItem_Click);
             // 
             // CircleMenuItem
             // 
             this.CircleMenuItem.Name = "CircleMenuItem";
-            this.CircleMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.CircleMenuItem.Size = new System.Drawing.Size(166, 22);
             this.CircleMenuItem.Text = "Круглый";
             this.CircleMenuItem.Click += new System.EventHandler(this.CircleMenuItem_Click);
             // 
+            // LanguageMenuItem
+            // 
+            this.LanguageMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.RussianMenuItem,
+            this.EnglishMenuItem});
+            this.LanguageMenuItem.Name = "LanguageMenuItem";
+            this.LanguageMenuItem.Size = new System.Drawing.Size(46, 20);
+            this.LanguageMenuItem.Text = "Язык";
+            // 
+            // RussianMenuItem
+            // 
+            this.RussianMenuItem.Name = "RussianMenuItem";
+            this.RussianMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.RussianMenuItem.Text = "Русский";
+            this.RussianMenuItem.Click += new System.EventHandler(this.RussianMenuItem_Click);
+            // 
+            // EnglishMenuItem
+            // 
+            this.EnglishMenuItem.Name = "EnglishMenuItem";
+            this.EnglishMenuItem.Size = new System.Drawing.Size(141, 22);
+            this.EnglishMenuItem.Text = "Английский";
+            this.EnglishMenuItem.Click += new System.EventHandler(this.EnglishMenuItem_Click);
+            // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.addTextButton);
             this.panel1.Controls.Add(this.SizeBar);
             this.panel1.Controls.Add(this.ButtonColor);
             this.panel1.Location = new System.Drawing.Point(0, 27);
@@ -118,11 +147,21 @@
             this.ButtonColor.UseVisualStyleBackColor = true;
             this.ButtonColor.Click += new System.EventHandler(this.ButtonColor_Click);
             // 
+            // addTextButton
+            // 
+            this.addTextButton.Location = new System.Drawing.Point(4, 68);
+            this.addTextButton.Name = "addTextButton";
+            this.addTextButton.Size = new System.Drawing.Size(75, 23);
+            this.addTextButton.TabIndex = 4;
+            this.addTextButton.Text = "Add Text";
+            this.addTextButton.UseVisualStyleBackColor = true;
+            this.addTextButton.Click += new System.EventHandler(this.addTextButton_Click);
+            // 
             // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(483, 286);
+            this.ClientSize = new System.Drawing.Size(673, 386);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.MainMenu);
             this.IsMdiContainer = true;
@@ -152,6 +191,10 @@
         private System.Windows.Forms.Button ButtonColor;
         private System.Windows.Forms.ColorDialog ColorPickerDialog;
         public System.Windows.Forms.TrackBar SizeBar;
+        private System.Windows.Forms.ToolStripMenuItem LanguageMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem RussianMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem EnglishMenuItem;
+        private System.Windows.Forms.Button addTextButton;
     }
 }
 

@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using lab05.Language;
+using lab05.TextBoxAdapter;
+using lab05.FigureProt;
 
 namespace lab05
 {
@@ -21,7 +18,23 @@ namespace lab05
         private Factory.IAbstractFactory factoryRectangle;
         public Color currentColor = Color.Black;
         public int size = 5;
-        
+        public DrawWindow tempDw;
+        public int x, y;
+
+        private void SetLanguage(string lang)
+        {
+            AppLanguage bridgeLang = new AppLanguage();
+            bridgeLang.SetLanguage(lang);
+            this.FileMenuItem.Text = bridgeLang.FileS;
+            this.CreateMenuItem.Text = bridgeLang.CreateS;
+            this.CanvasMenuItem.Text = bridgeLang.CanvasS;
+            this.RectangleMenuItem.Text = bridgeLang.RectCanvasS;
+            this.CircleMenuItem.Text = bridgeLang.CircCanvasS;
+            this.LanguageMenuItem.Text = bridgeLang.LanguageS;
+            this.EnglishMenuItem.Text = bridgeLang.EnglishLangS;
+            this.RussianMenuItem.Text = bridgeLang.RussianLangS;
+        }
+
         public Color CurrentColor()
         {
             return currentColor;
@@ -50,6 +63,7 @@ namespace lab05
             dw.DrawBox = canvas.SetDrawBox(dw.DrawBox);
             dw.MdiParent = this;
             dw.Show();
+            tempDw = dw;
         }
 
         private void ButtonColor_Click(object sender, EventArgs e)
@@ -73,6 +87,52 @@ namespace lab05
         private void SizeBar_ValueChanged(object sender, EventArgs e)
         {
             size = SizeBar.Value;
+        }
+
+        private void RussianMenuItem_Click(object sender, EventArgs e)
+        {
+            SetLanguage("ru");
+        }
+
+        private void EnglishMenuItem_Click(object sender, EventArgs e)
+        {
+            SetLanguage("en");
+        }
+
+        private void addTextButton_Click(object sender, EventArgs e)
+        {
+            TextBox tb = new TextBox();
+            tb.BorderStyle = BorderStyle.None;
+            tb.Multiline = true;
+            tb.Text = "text";
+
+            Adapter textBox = new Adapter();
+            textBox.text = tb;
+            textBox.text.MouseMove += textBox1_MouseMove;
+            textBox.text.MouseDown += textBox1_MouseDown;
+            textBox.text.TextChanged += textBox.TextChange;
+
+
+            Point pos = new Point(30, 32);
+            tb.Location = pos;
+            this.Controls.Add(tb);
+            tb.BringToFront();
+        }
+
+        private void textBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left) // или любую другую, какая удобнее
+            {
+                Point pos = new Point();
+                pos = new Point(Cursor.Position.X - x, Cursor.Position.Y - y);
+                ((TextBox)sender).Location = PointToClient(pos);
+            }
+        }
+
+        private void textBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+            x = e.X;
+            y = e.Y;
         }
     }
 }

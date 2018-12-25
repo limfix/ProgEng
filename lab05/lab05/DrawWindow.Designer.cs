@@ -30,6 +30,8 @@
         {
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.DrawBox = new System.Windows.Forms.PictureBox();
+            this.copyButton = new System.Windows.Forms.Button();
+            this.pasteButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DrawBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,12 +47,34 @@
             this.DrawBox.MouseMove += new System.Windows.Forms.MouseEventHandler(this.DrawBox_MouseMove);
             this.DrawBox.MouseUp += new System.Windows.Forms.MouseEventHandler(this.DrawBox_MouseUp);
             // 
+            // copyButton
+            // 
+            this.copyButton.Location = new System.Drawing.Point(13, 267);
+            this.copyButton.Name = "copyButton";
+            this.copyButton.Size = new System.Drawing.Size(75, 23);
+            this.copyButton.TabIndex = 1;
+            this.copyButton.Text = "Copy";
+            this.copyButton.UseVisualStyleBackColor = true;
+            this.copyButton.Click += new System.EventHandler(this.copyButton_Click_1);
+            // 
+            // pasteButton
+            // 
+            this.pasteButton.Location = new System.Drawing.Point(169, 267);
+            this.pasteButton.Name = "pasteButton";
+            this.pasteButton.Size = new System.Drawing.Size(75, 23);
+            this.pasteButton.TabIndex = 2;
+            this.pasteButton.Text = "Paste";
+            this.pasteButton.UseVisualStyleBackColor = true;
+            this.pasteButton.Click += new System.EventHandler(this.pasteButton_Click);
+            // 
             // DrawWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(256, 256);
+            this.ClientSize = new System.Drawing.Size(260, 304);
+            this.Controls.Add(this.pasteButton);
+            this.Controls.Add(this.copyButton);
             this.Controls.Add(this.DrawBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "DrawWindow";
@@ -65,5 +89,7 @@
         #endregion
         private System.Windows.Forms.ColorDialog colorDialog1;
         public System.Windows.Forms.PictureBox DrawBox;
+        private System.Windows.Forms.Button copyButton;
+        private System.Windows.Forms.Button pasteButton;
     }
 }
