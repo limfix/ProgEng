@@ -20,19 +20,24 @@ namespace lab05
         public int size = 5;
         public DrawWindow tempDw;
         public int x, y;
+        internal WindowLang localization = new WindowTranslator(new RussianLanguage());
 
-        private void SetLanguage(string lang)
+        private void DoTranslate()
         {
-            AppLanguage bridgeLang = new AppLanguage();
-            bridgeLang.SetLanguage(lang);
-            this.FileMenuItem.Text = bridgeLang.FileS;
-            this.CreateMenuItem.Text = bridgeLang.CreateS;
-            this.CanvasMenuItem.Text = bridgeLang.CanvasS;
-            this.RectangleMenuItem.Text = bridgeLang.RectCanvasS;
-            this.CircleMenuItem.Text = bridgeLang.CircCanvasS;
-            this.LanguageMenuItem.Text = bridgeLang.LanguageS;
-            this.EnglishMenuItem.Text = bridgeLang.EnglishLangS;
-            this.RussianMenuItem.Text = bridgeLang.RussianLangS;
+            this.FileMenuItem.Text = localization.language.FileS;
+            this.CreateMenuItem.Text = localization.language.CreateS;
+            this.CanvasMenuItem.Text = localization.language.CanvasS;
+            this.RectangleMenuItem.Text = localization.language.RectCanvasS;
+            this.CircleMenuItem.Text = localization.language.CircCanvasS;
+            this.LanguageMenuItem.Text = localization.language.LanguageS;
+            this.EnglishMenuItem.Text = localization.language.EnglishLangS;
+            this.RussianMenuItem.Text = localization.language.RussianLangS;
+            this.addTextButton.Text = localization.language.AddTextButtonS;
+            foreach (DrawWindow frm in this.MdiChildren)
+            {
+                frm.copyButton.Text = localization.language.CopyButtonS;
+                frm.pasteButton.Text = localization.language.PasteButtonS;
+            }
         }
 
         public Color CurrentColor()
@@ -62,6 +67,8 @@ namespace lab05
             dw.drawType = canvas.GetCanvasType();
             dw.DrawBox = canvas.SetDrawBox(dw.DrawBox);
             dw.MdiParent = this;
+            dw.currentLocalization = localization;
+            Console.WriteLine(localization.language.CopyButtonS);
             dw.Show();
             tempDw = dw;
         }
@@ -91,12 +98,16 @@ namespace lab05
 
         private void RussianMenuItem_Click(object sender, EventArgs e)
         {
-            SetLanguage("ru");
+            localization.Language = new RussianLanguage();
+            localization.Translate();
+            DoTranslate();
         }
 
         private void EnglishMenuItem_Click(object sender, EventArgs e)
         {
-            SetLanguage("en");
+            localization.Language = new EnglishLanguage();
+            localization.Translate();
+            DoTranslate();
         }
 
         private void addTextButton_Click(object sender, EventArgs e)

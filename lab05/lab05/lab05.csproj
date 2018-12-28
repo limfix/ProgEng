@@ -48,6 +48,9 @@
   <ItemGroup>
     <Compile Include="FigureProt\CopyFigure.cs" />
     <Compile Include="FigureProt\IFigure.cs" />
+    <Compile Include="Language\EnglishLanguage.cs" />
+    <Compile Include="Language\WindowTranslator.cs" />
+    <Compile Include="Language\WindowLang.cs" />
     <Compile Include="TextBoxAdapter\UserText.cs" />
     <Compile Include="Brush\CircleBrush.cs" />
     <Compile Include="Brush\RectangleBrush.cs" />
@@ -61,7 +64,7 @@
     <Compile Include="Factory\ConcreteFactoryCircle.cs" />
     <Compile Include="Factory\IAbstractFactory.cs" />
     <Compile Include="Factory\ConcreteFactoryRectangle.cs" />
-    <Compile Include="Language\AppLanguage.cs" />
+    <Compile Include="Language\RussianLanguage.cs" />
     <Compile Include="Language\ILanguage.cs" />
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>

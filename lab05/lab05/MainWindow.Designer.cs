@@ -38,10 +38,10 @@
             this.RussianMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.EnglishMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.addTextButton = new System.Windows.Forms.Button();
             this.SizeBar = new System.Windows.Forms.TrackBar();
             this.ButtonColor = new System.Windows.Forms.Button();
             this.ColorPickerDialog = new System.Windows.Forms.ColorDialog();
-            this.addTextButton = new System.Windows.Forms.Button();
             this.MainMenu.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SizeBar)).BeginInit();
@@ -130,6 +130,16 @@
             this.panel1.Size = new System.Drawing.Size(82, 258);
             this.panel1.TabIndex = 2;
             // 
+            // addTextButton
+            // 
+            this.addTextButton.Location = new System.Drawing.Point(4, 68);
+            this.addTextButton.Name = "addTextButton";
+            this.addTextButton.Size = new System.Drawing.Size(75, 39);
+            this.addTextButton.TabIndex = 4;
+            this.addTextButton.Text = "Добавить текст";
+            this.addTextButton.UseVisualStyleBackColor = true;
+            this.addTextButton.Click += new System.EventHandler(this.addTextButton_Click);
+            // 
             // SizeBar
             // 
             this.SizeBar.Location = new System.Drawing.Point(3, 32);
@@ -146,16 +156,6 @@
             this.ButtonColor.TabIndex = 2;
             this.ButtonColor.UseVisualStyleBackColor = true;
             this.ButtonColor.Click += new System.EventHandler(this.ButtonColor_Click);
-            // 
-            // addTextButton
-            // 
-            this.addTextButton.Location = new System.Drawing.Point(4, 68);
-            this.addTextButton.Name = "addTextButton";
-            this.addTextButton.Size = new System.Drawing.Size(75, 23);
-            this.addTextButton.TabIndex = 4;
-            this.addTextButton.Text = "Add Text";
-            this.addTextButton.UseVisualStyleBackColor = true;
-            this.addTextButton.Click += new System.EventHandler(this.addTextButton_Click);
             // 
             // MainWindow
             // 

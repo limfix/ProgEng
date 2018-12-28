@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using System.Drawing;
 using lab05.FigureProt;
+using lab05.Language;
 
 namespace lab05
 {
@@ -17,6 +18,7 @@ namespace lab05
         Graphics g;
         Point prevPoint;
         Point currentPoint;
+        internal WindowLang currentLocalization;
 
         IFigure clone = new CopyFigure();
 

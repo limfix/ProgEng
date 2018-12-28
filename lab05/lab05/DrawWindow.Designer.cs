@@ -53,7 +53,7 @@
             this.copyButton.Name = "copyButton";
             this.copyButton.Size = new System.Drawing.Size(75, 23);
             this.copyButton.TabIndex = 1;
-            this.copyButton.Text = "Copy";
+            this.copyButton.Text = "Копировать";
             this.copyButton.UseVisualStyleBackColor = true;
             this.copyButton.Click += new System.EventHandler(this.copyButton_Click_1);
             // 
@@ -63,7 +63,7 @@
             this.pasteButton.Name = "pasteButton";
             this.pasteButton.Size = new System.Drawing.Size(75, 23);
             this.pasteButton.TabIndex = 2;
-            this.pasteButton.Text = "Paste";
+            this.pasteButton.Text = "Вставить";
             this.pasteButton.UseVisualStyleBackColor = true;
             this.pasteButton.Click += new System.EventHandler(this.pasteButton_Click);
             // 
@@ -89,7 +89,7 @@
         #endregion
         private System.Windows.Forms.ColorDialog colorDialog1;
         public System.Windows.Forms.PictureBox DrawBox;
-        private System.Windows.Forms.Button copyButton;
-        private System.Windows.Forms.Button pasteButton;
+        internal System.Windows.Forms.Button copyButton;
+        internal System.Windows.Forms.Button pasteButton;
     }
 }
